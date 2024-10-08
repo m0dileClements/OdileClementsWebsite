@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* Navigation Bar CSS */
+.navbar{
+    padding:0;
+    margin: 0 auto;
+    height:50px;
+    background-color: #3b7d4f ;
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 50 ;
+    font-size: 1rem;
+}
+.navbarCont {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    margin: 1500px;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+
+}
+li a:hover {
+    color: #233329;
+    font-weight: bold;
+} 
+.navbarRow{
+    list-style: none;
+    text-align: center;
+    display:flex;
+    text-align: center;    
+}
+.logo{
+    height: 50px;
+    width:50px;
+}
+.navListItem {
+    height: 50px;
+}
+.moveRight{
+    list-style: none;
+    text-align: center;
+    display:flex;
+    text-align: center;
+    
+}
+.navLink{
+    color: #FBFAF8; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 0 2rem;
+    height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Footer CSS*/
+
+.footerCont{
+    background-color: #3b7d4f ;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+}
+.footerInfo{
+    width:100%;
+}
+.footerItems{
+    width:fit-content;
+    max-width: 500px;
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+}
+.footerInfoWrapper{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    padding: 10px;
+}
+.footerLink{
+    text-decoration:none;
+    color: #F5F5F5;
+
+}
+.footerLink:hover{
+    /* text-decoration: underline;
+    text-decoration-color: #233329; */
+    color: #233329;
+   
+}
+.footerHeader{
+    color: #233329;
+    
+    text-decoration: underline;
+    text-decoration-color: #233329;
+}

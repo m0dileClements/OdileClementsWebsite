@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: #233329;
+}
+
 /* Navigation Bar CSS */
 .navbar{
     padding:0;
@@ -24,6 +28,7 @@
     margin: 1500px;
     margin: 0 auto;
     padding: 0 0.5rem;
+    background-color: #3b7d4f;
 
 }
 li a:hover {
@@ -42,7 +47,9 @@ li a:hover {
 }
 .navListItem {
     height: 50px;
+    
 }
+
 .moveRight{
     list-style: none;
     text-align: center;
@@ -61,12 +68,49 @@ li a:hover {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* Text Box Content CSS */
+
+.contentBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contentWrapper{
+
+}
+.textCont{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    background-color: #d1ba94;
+    margin: 3rem;
+}
+.titleText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-direction: column;
+    padding: 1rem;
+    color: #233329;
+}
+.textBody{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 1.5rem;
+    padding-bottom: 0.5rem;
+    color: #233329;
+}
+
+
 /*Footer CSS*/
 
 .footerCont{
     background-color: #3b7d4f ;
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -102,4 +146,48 @@ li a:hover {
     
     text-decoration: underline;
     text-decoration-color: #233329;
+}
+
+/* .footerTagDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+} */
+/* .footerTagWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+}
+.footerNameTag{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items:center;
+} */
+.footerItemsLogo{
+    /* width:fit-content;
+    max-width: 500px; */
+    display: flex;
+    justify-content: flex; 
+    flex-direction: row;
+    align-items: center;
+    color:#F5F5F5
+}
+
+@media screen and (max-width: 400px){
+    .footerInfoWrapper{
+        display: flex;
+        justify-content: center; 
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .navLink{
+        padding: 0 10px;
+    }
+
 }

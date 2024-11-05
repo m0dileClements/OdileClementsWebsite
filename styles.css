@@ -3,15 +3,17 @@
     padding: 0;
 }
 body{
+   
     background-color: #233329;
 }
+/*background-image: linear-gradient(to top, rgba(35,51,41,1),rgba(35,51,41,0));*/
 
 /* Navigation Bar CSS */
 .navbar{
     padding:0;
     margin: 0 auto;
-    height:50px;
-    background-color: #3b7d4f ;
+    height:75px;
+    background-color: #FBFAF8 ;
     display:flex;
     justify-content: center ;
     align-items: center;
@@ -23,12 +25,12 @@ body{
 .navbarCont {
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 75px;
     width: 100%;
     margin: 1500px;
     margin: 0 auto;
     padding: 0 0.5rem;
-    background-color: #3b7d4f;
+    background-color: #FBFAF8;
 
 }
 li a:hover {
@@ -42,11 +44,11 @@ li a:hover {
     text-align: center;    
 }
 .logo{
-    height: 50px;
-    width:50px;
+    height: 75px;
+    width:75px;
 }
 .navListItem {
-    height: 50px;
+    height: 75px;
     
 }
 
@@ -58,7 +60,7 @@ li a:hover {
     
 }
 .navLink{
-    color: #FBFAF8; 
+    color: #3b7d4f; 
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -66,6 +68,39 @@ li a:hover {
     padding: 0 2rem;
     height: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Hero Box Content*/
+.hero{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+
+.heroText{
+    position: relative;
+    font-size: 2rem; 
+    text-align: left;
+    justify-content: flex-start;
+    color: #FBFAF8;
+    text-shadow: 1px 1px 2px #233329;
+
+    
+}
+
+/*Parallax Conent*/
+.parallax{
+    //background-image: url('images/codingbackground.jpg');
+can i
+    background-size: cover;
 }
 
 /* Text Box Content CSS */
@@ -75,6 +110,7 @@ li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .contentWrapper{
 
@@ -84,7 +120,7 @@ li a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column; */
-    background-color: #d1ba94;
+    background-color: #3b7d4f;
     margin: 3rem;
 }
 .titleText{
@@ -101,7 +137,7 @@ li a:hover {
     align-items: center;
     padding: 0 1.5rem;
     padding-bottom: 0.5rem;
-    color: #233329;
+    color: #F5F5F5;
 }
 
 

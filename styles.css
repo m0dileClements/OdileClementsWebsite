@@ -3,10 +3,9 @@
     padding: 0;
 }
 body{
-   
-    background-color: #233329;
+   /* background-color: #233329; */
+    background-color: #3b7d4f;
 }
-/*background-image: linear-gradient(to top, rgba(35,51,41,1),rgba(35,51,41,0));*/
 
 /* Navigation Bar CSS */
 .navbar{
@@ -69,18 +68,22 @@ li a:hover {
     height: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 /* Hero Box Content*/
+.pageContainerHomePage{
+    position: relative;
+    min-height: 100vh;
+}
 .hero{
     position: relative;
     display:flex;
     justify-content: center;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: right;
+    justify-content: flex-end;
     width: 100%;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+
 }
 
 
@@ -88,21 +91,40 @@ li a:hover {
 .heroText{
     position: relative;
     font-size: 2rem; 
-    text-align: left;
+    text-align: right;
     justify-content: flex-start;
     color: #FBFAF8;
     text-shadow: 1px 1px 2px #233329;
+    padding-right: 2rem;
 
     
 }
 
-/*Parallax Conent*/
-.parallax{
-    //background-image: url('images/codingbackground.jpg');
-can i
-    background-size: cover;
+/*Hero Image Formatting*/
+
+.outerHeroContHome{
+    background-image: url('images/ClementsPortraitOriginal.jpg');
+    width:100%; 
+    background-color: #233329;
+    background-size:cover;
+ 
 }
 
+.outerHeroContProjects{
+    background-image: url('images/blackandwhiteblot.jpg');
+    width:100%; 
+    background-color: #233329;
+    background-size:cover;
+ 
+}
+
+.transitionGradient{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(59, 125, 79, 0), rgba(59, 125, 79, 1));
+    margin-top: -4.5rem;
+}
 /* Text Box Content CSS */
 
 .contentBody{
@@ -112,43 +134,110 @@ can i
     flex-direction: column;
     position: relative;
 }
-.contentWrapper{
-
-}
+.contentWrapperHome{
+    padding-bottom: 2.5rem;
+} 
 .textCont{
     /* display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; */
-    background-color: #3b7d4f;
-    margin: 3rem;
+    background-color: #FBFAF8;
+    margin: 3rem 5rem;
+    border-radius: 25px;
 }
 .titleText{
     display: flex;
     justify-content: center;
     align-items: center;
-    -ms-flex-direction: column;
+    flex-direction: column;
     padding: 1rem;
-    color: #233329;
+    color: #3b7d4f;
 }
 .textBody{
     display: flex;
     justify-content: left;
     align-items: center;
     padding: 0 1.5rem;
-    padding-bottom: 0.5rem;
-    color: #F5F5F5;
+    padding-bottom: 2rem;
+    color: #233329;
+    font-size: large;
 }
 
+/*About Me Page*/
+
+.pageContainerAboutMe{
+    position: relative;
+    min-height: 100vh;
+}
+.contentBodyAboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+}
+.contentWrapperAboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+} 
+.textContAboutMe{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    background-color: #FBFAF8;
+    margin: 3rem;
+    border-radius: 25px;
+}
+.titleTextAboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: #3b7d4f;
+}
+.textBodyAboutMe{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 2rem;
+    color: #233329;
+    font-size: large;
+}
+.aboutMePhoto{
+    width:500px;
+    height: auto;
+    border-radius: 25px;
+    margin: 3rem;
+}
 
 /*Footer CSS*/
 
 .footerCont{
-    background-color: #3b7d4f ;
+    background-color: #233329 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* position: absolute;
+    bottom: 0; */
+    width: 100%;
+
+}
+.footerContAboutMe{
+    background-color: #233329 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
 .footerInfo{
     width:100%;
@@ -168,20 +257,29 @@ can i
 }
 .footerLink{
     text-decoration:none;
-    color: #F5F5F5;
+    color: #FBFAF8;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+
+}
+.footerTextWhite{
+    text-decoration:none;
+    color: #FBFAF8;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
 
 }
 .footerLink:hover{
     /* text-decoration: underline;
     text-decoration-color: #233329; */
-    color: #233329;
+    color: #3b7d4f;
    
 }
 .footerHeader{
-    color: #233329;
+    color: #FBFAF8;
     
     text-decoration: underline;
-    text-decoration-color: #233329;
+    text-decoration-color: #FBFAF8;
 }
 
 /* .footerTagDiv{

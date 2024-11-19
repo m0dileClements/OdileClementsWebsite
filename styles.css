@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border:0;
 }
 body{
    /* background-color: #233329; */
@@ -86,19 +87,45 @@ li a:hover {
 
 }
 
-
-
 .heroText{
     position: relative;
-    font-size: 2rem; 
+    font-size: 2.5rem; 
     text-align: right;
     justify-content: flex-start;
     color: #FBFAF8;
     text-shadow: 1px 1px 2px #233329;
-    padding-right: 2rem;
-
-    
+    padding-right: 2rem; 
 }
+
+.heroTextProject{
+    text-align: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 850px){
+    .heroText{
+        text-align: left;
+    }
+    .hero{
+        justify-content: flex-start;
+        align-items: left;
+    }
+    .parallaxHome{
+        background: url('images/OdilePortraitVeryCroppedResized.jpg') fixed !important;
+        width:100%;
+    }
+    .heroText{
+        padding-right: 0 !important;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    .textCont {
+        margin: 2rem 3rem !important;
+
+    }
+
+}
+
 
 /*Hero Image Formatting*/
 
@@ -107,24 +134,20 @@ li a:hover {
     width:100%; 
     background-color: #233329;
     background-size:cover;
- 
+
 }
 
-.outerHeroContProjects{
-    background-image: url('images/blackandwhiteblot.jpg');
-    width:100%; 
-    background-color: #233329;
-    background-size:cover;
- 
-}
+
 
 .transitionGradient{
-    height: 75px;
+    height: 100px;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(to bottom, rgba(59, 125, 79, 0), rgba(59, 125, 79, 1));
-    margin-top: -4.5rem;
+    background-image: linear-gradient(to bottom, rgba(59, 125, 79, 0), rgba(59, 125, 79, 0.75), rgba(59, 125, 79, 1));
+    margin-top: -6rem;
 }
+
+
 /* Text Box Content CSS */
 
 .contentBody{
@@ -134,16 +157,11 @@ li a:hover {
     flex-direction: column;
     position: relative;
 }
-.contentWrapperHome{
-    padding-bottom: 2.5rem;
-} 
+
 .textCont{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
+    
     background-color: #FBFAF8;
-    margin: 3rem 5rem;
+    margin: 3rem 6rem;
     border-radius: 25px;
 }
 .titleText{
@@ -166,10 +184,6 @@ li a:hover {
 
 /*About Me Page*/
 
-.pageContainerAboutMe{
-    position: relative;
-    min-height: 100vh;
-}
 .contentBodyAboutMe{
     display: flex;
     justify-content: center;
@@ -185,10 +199,6 @@ li a:hover {
     position: relative;
 } 
 .textContAboutMe{
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     background-color: #FBFAF8;
     margin: 3rem;
     border-radius: 25px;
@@ -209,10 +219,48 @@ li a:hover {
     font-size: large;
 }
 .aboutMePhoto{
-    width:500px;
-    height: auto;
+    object-fit: cover;
+    width:300px;
+    /* height: 300px; */
     border-radius: 25px;
     margin: 3rem;
+
+}
+
+
+@media screen and (max-width: 800px){
+    .aboutMePhoto{
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        margin: 3rem;
+        margin-bottom: 0; 
+}
+    .contentBodyAboutMe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .contentWrapperAboutMe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    } 
+
+}
+
+@media screen and (max-width: 400px){
+    .aboutMePhoto{
+        object-fit: cover;
+        width: 90%;
+        height: 250px;
+        /* border-radius: 50px; */
+    }
 }
 
 /*Footer CSS*/
@@ -223,9 +271,10 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* position: absolute;
-    bottom: 0; */
+    position: absolute;
+    bottom: 0;
     width: 100%;
+   
 
 }
 .footerContAboutMe{
@@ -282,26 +331,6 @@ li a:hover {
     text-decoration-color: #FBFAF8;
 }
 
-/* .footerTagDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-} */
-/* .footerTagWrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width:100%;
-}
-.footerNameTag{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 50px;
-    align-items:center;
-} */
 .footerItemsLogo{
     /* width:fit-content;
     max-width: 500px; */
@@ -323,5 +352,160 @@ li a:hover {
     .navLink{
         padding: 0 10px;
     }
+    .pageContainer {
+        position: relative;
+        width:100%;
+        min-height:100vh;
+    }
+    .contentBody{
+        padding-bottom: 465px !important;
+    }
+    .footerCont{
+        background-color: #233329 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;    
+    }
 
+}
+
+/* Contact Page Styling */
+
+.pageContainer {
+    position: relative;
+    width:100%;
+    min-height:100vh;
+}
+
+.contentBody{
+    padding-bottom: 225.5px;
+}
+
+
+
+/*Project Page Styling*/
+
+.projectDirection {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    justify-content: center;
+    /* align-items: right;
+    justify-content: flex-end; */
+}
+
+.projectHeroPadding{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.outerHeroContProjects{
+    background-image: url('images/blackandwhiteblot.jpg');
+    width:100%; 
+    background-color: #233329;
+    background-size:cover;
+ 
+}
+
+.addMargin{
+    margin: 60% 0;
+}
+
+.parallax{
+    background: url('images/codingbackground.jpg') repeat fixed 55%;
+}
+
+.parallax-inner{
+    padding-top:15%;
+    padding-bottom: 15%;
+}
+
+.parallaxHome{
+    background: url('images/OdilePortraitCroppedResized.jpg') fixed;
+    width:100%;
+}
+
+.parallaxHome-inner{
+    padding-top: 5%;
+    padding-bottom: 5%;
+} 
+
+.parallaxContact{
+    background: url('images/blackandwhiteblot.jpg') repeat fixed 55%;
+    width:100%;
+}
+
+.parallax-innerContactLeft{
+    
+    margin-bottom: 40vh;
+    padding-top: 25px;
+    /* padding-bottom: 5%;  */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    
+
+}
+
+.parallax-innerContactRight{
+    
+    margin-bottom: 40vh;
+    /* padding-top: 25px; */
+    /* padding-bottom: 5%; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contactInfoTextContRight{
+    background-color: #233329;
+    position: absolute ;
+    right: 0px;
+    width: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    padding-left: 2.5rem;
+    color: #F5F5F5;
+    padding-right: 20vh;
+}
+
+.contactInfoTextContLeft{
+    background-color: #233329;
+    position: absolute ;
+    left: 0px;
+    width: fit-content;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    padding-left: 2.5rem;
+    color: #F5F5F5;
+    padding-right: 20vh;
+}
+
+.contactInfo{
+    padding-left: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #F5F5F5;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3b7d4f;
 }

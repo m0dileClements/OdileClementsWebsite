@@ -46,6 +46,7 @@ li a:hover {
 .logo{
     height: 75px;
     width:75px;
+    background-color: #FBFAF8;
 }
 .navListItem {
     height: 75px;
@@ -338,7 +339,7 @@ li a:hover {
     justify-content: flex; 
     flex-direction: row;
     align-items: center;
-    color:#F5F5F5
+    color:#fbfaf8;
 }
 
 @media screen and (max-width: 450px){
@@ -477,7 +478,7 @@ li a:hover {
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
     padding-left: 2.5rem;
-    color: #F5F5F5;
+    color: #fbfaf8;
     padding-right: 20vh;
 }
 
@@ -492,7 +493,7 @@ li a:hover {
     border-bottom-right-radius: 25px;
 
     padding-left: 2.5rem;
-    color: #F5F5F5;
+    color: #fbfaf8;
     padding-right: 20vh;
 }
 
@@ -502,7 +503,7 @@ li a:hover {
 
 a {
     text-decoration: none;
-    color: #F5F5F5;
+    color: #fbfaf8;
 }
 
 a:hover {

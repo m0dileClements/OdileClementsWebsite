@@ -6,7 +6,7 @@
 }
 body{
    /* background-color: #233329; */
-    background-color: #3b7d4f;
+    background-color: #ffffff;
 }
 
 .projectsCont h1 {
@@ -162,6 +162,15 @@ li a:hover {
     margin-top: -6rem;
 }
 
+/* .transitionGradientProject{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgba(251, 250, 248, 0), rgba(251, 250, 248, 0.75), rgba(251, 250, 248, 1));
+    margin-top: -3rem;
+    z-index: 1;
+} */
+
 
 /* Text Box Content CSS */
 
@@ -195,6 +204,7 @@ li a:hover {
     padding-bottom: 2rem;
     color: #233329;
     font-size: large;
+
 }
 
 /*About Me Page*/
@@ -618,7 +628,7 @@ a {
 
 
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 780px){
     .projects h2{
         font-size: 1.5rem;
         
@@ -630,7 +640,7 @@ a {
         font-size: 1rem;
     }
 }
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
     .projects h2{
         font-size: 4vw;
         
@@ -692,6 +702,8 @@ a {
     color:#FBFAF8;
 
 }
+
+
 
 .embeddedVideo{
     padding-bottom: 30px;
